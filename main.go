@@ -2,7 +2,6 @@ package main
 
 import (
 	"fist_test/test"
-	"fmt"
 )
 
 func main() {
@@ -13,15 +12,15 @@ func main() {
 
 	// test.RunIota2()
 	// go test.RunInit()
-	test.RunGoroutine1()
+	test.RunZapLogRote()
 
 	//按q退出
-	var q string
-	for {
-		fmt.Scanln(&q)
-		if q == "q" {
-			break
-		}
-	}
+	// var q string
+	// for {
+	// 	fmt.Scanln(&q)
+	// 	if q == "q" {
+	// 		break
+	// 	}
+	// }
 
 }
