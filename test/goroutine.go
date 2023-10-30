@@ -70,7 +70,10 @@ func producer(c chan int, chanCancel <-chan int) {
 				msg := fmt.Sprintf("生产v: %v,goid:%v\n", v, gid)
 				log.Logger.Info().Msg(msg)
 
+			default:
+				log.Logger.Info().Msg("producer default")
 			}
+
 			time.Sleep(100 * time.Millisecond)
 
 		}
